@@ -120,7 +120,7 @@ def get_predictions(src, retina, maxvit, target_dir, first, is_face, is_left, is
                     ),
                     bgr_face,
                 )
-        if counter == first:
+        if counter == first and first >= 1:
             break
         if cv2.waitKey(1) == ord("q"):
             break
